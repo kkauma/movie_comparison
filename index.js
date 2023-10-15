@@ -5,6 +5,11 @@ const fetchData = async (searchTerm) => {
       s: searchTerm,
     },
   });
+
+  if (response.data.Error) {
+    return [];
+  }
+
   return response.data.Search;
 };
 

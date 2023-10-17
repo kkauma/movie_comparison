@@ -15,12 +15,13 @@ const fetchData = async (searchTerm) => {
 
 createAutoComplete({
   root: document.querySelector(".autocomplete"),
-});
-createAutoComplete({
-  root: document.querySelector(".autocomplete-two"),
-});
-createAutoComplete({
-  root: document.querySelector(".autocomplete-three"),
+  renderOption(movie) {
+    const imgSRC = movie.Poster === "N/A" ? "" : movie.Poster;
+    return `
+        <img src="${imgSRC}" />
+        ${movie.Title} (${movie.Year})
+    `;
+  },
 });
 
 const onMovieSelect = async (movie) => {

@@ -1,6 +1,6 @@
 # Movie Comparison Application
 
-App that compares various movie statistics
+App that compares various movie statistics using the OMDB API
 
 * Built from Colt Steele and Stephen Grider's 2021 Modern Javacript Bootcamp Course
 

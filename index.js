@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const autocompleteConfig = {
   renderOption(movie) {
     const imgSRC = movie.Poster === "N/A" ? "" : movie.Poster;
@@ -10,17 +12,11 @@ const autocompleteConfig = {
     return movie.Title;
   },
   async fetchData(searchTerm) {
-    const response = await axios.get("http://www.omdbapi.com/", {
+    const response = await axios.get("/api/movies/search", {
       params: {
-        apikey: "a4f7df47",
-        s: searchTerm,
+        term: searchTerm,
       },
     });
-
-    if (response.data.Error) {
-      return [];
-    }
-
     return response.data.Search;
   },
 };
@@ -45,12 +41,7 @@ createAutoComplete({
 let leftMovie;
 let rightMovie;
 const onMovieSelect = async (movie, summaryElement, side) => {
-  const response = await axios.get("http://www.omdbapi.com/", {
-    params: {
-      apikey: "a4f7df47",
-      i: movie.imdbID,
-    },
-  });
+  const response = await axios.get(`/api/movies/movie/${movie.imdbID}`);
 
   summaryElement.innerHTML = movieTemplate(response.data);
 
@@ -76,8 +67,8 @@ const runComparison = () => {
   leftSideStats.forEach((leftStat, index) => {
     const rightStat = rightSideStats[index];
 
-    const leftSideValue = leftStat.dataset.value;
-    const rightSideValue = rightStat.dataset.value;
+    const leftSideValue = parseInt(leftStat.dataset.value);
+    const rightSideValue = parseInt(rightStat.dataset.value);
 
     if (rightSideValue > leftSideValue) {
       leftStat.classList.remove("is-primary");

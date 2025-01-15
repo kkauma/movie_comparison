@@ -1,4 +1,6 @@
-const createAutoComplete = ({
+import { debounce } from "./utils.js";
+
+export const createAutoComplete = ({
   root,
   renderOption,
   onOptionSelect,

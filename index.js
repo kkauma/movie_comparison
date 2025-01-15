@@ -1,4 +1,4 @@
-require("dotenv").config();
+import { createAutoComplete } from "./autocomplete.js";
 
 const autocompleteConfig = {
   renderOption(movie) {

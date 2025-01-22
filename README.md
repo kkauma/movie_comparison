@@ -1,8 +1,10 @@
 # Movie Fight - Movie Comparison Application
 
-A dynamic web application that allows users to compare two movies side by side, displaying various statistics and information from the OMDB API.
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CampFinder Landing Page" width="100%">
+</p>
 
-![Movie Fight Screenshot](screenshot.png) <!-- Consider adding a screenshot of your app -->
+A dynamic web application that allows users to compare two movies side by side, displaying various statistics and information from the OMDB API.
 
 ## 🎬 Features
 

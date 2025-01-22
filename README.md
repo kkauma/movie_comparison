@@ -6,6 +6,8 @@
 
 A dynamic web application that allows users to compare two movies side by side, displaying various statistics and information from the OMDB API.
 
+🔗 [View Live Demo](https://moviefight.app)
+
 ## 🎬 Features
 
 - **Dual Search Interface**: Compare any two movies simultaneously

@@ -6,9 +6,9 @@
 
 A dynamic web application that allows users to compare two movies side by side, displaying various statistics and information from the OMDB API.
 
-🔗 [View Live Demo](https://moviefight.app)
+[View Live Demo](https://moviefight.app)
 
-## 🎬 Features
+## Features
 
 - **Dual Search Interface**: Compare any two movies simultaneously
 - **Real-time Search**: Dynamic search results as you type
@@ -20,7 +20,7 @@ A dynamic web application that allows users to compare two movies side by side, 
   - Year of Release
   - Movie Posters
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend**:
 
@@ -34,14 +34,14 @@ A dynamic web application that allows users to compare two movies side by side, 
   - Express.js
   - OMDB API for movie data
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 - Node.js installed on your machine
 - OMDB API key (get one at: http://www.omdbapi.com/)
 
-## 🌟 Key Features Explained
+## Key Features Explained
 
 ### Auto-Complete Search
 
@@ -55,26 +55,18 @@ A dynamic web application that allows users to compare two movies side by side, 
 - Visual indicators for comparing metrics
 - Detailed movie information display
 
-## 📝 API Integration
+## API Integration
 
 The application uses the OMDB API for fetching movie data. Two main endpoints are used:
 
 - Search endpoint: Fetches movie lists based on search terms
 - Movie endpoint: Fetches detailed information for specific movies
 
-## 🚀 Deployment
+## Deployment
 
 This application is configured for deployment on Vercel. The `vercel.json` file includes all necessary configuration for both static and API routes.
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](link-to-your-issues-page).
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OMDB API for providing movie data
 - Bulma CSS for the responsive design framework
